@@ -1,0 +1,141 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #ff4500;
+      letter-spacing: 1px;
+    }
+
+    #clock {
+      font-size: 2rem;
+      font-weight: bold;
+      background: #111;
+      padding: 12px 25px;
+      border-radius: 10px;
+      display: inline-block;
+      color: #0ff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      animation: pulse 1.5s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+      }
+
+      to {
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+      }
+    }
+
+    /* Links Container */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .links a {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: 0.3s;
+      color: white;
+    }
+
+    /* Individual Platform Colors */
+    .google {
+      background: #db4437;
+    }
+
+    .google:hover {
+      background: #c23321;
+    }
+
+    .instagram {
+      background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+    }
+
+    .instagram:hover {
+      opacity: 0.85;
+    }
+
+    .twitter {
+      background: #1da1f2;
+    }
+
+    .twitter:hover {
+      background: #0d8ddb;
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
+
+    .facebook:hover {
+      background: #0f5dc8;
+    }
+
+    .github {
+      background: #24292e;
+    }
+
+    .github:hover {
+      background: #000;
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    .whatsapp:hover {
+      background: #1da851;
+    }
+
+    .Telegram {
+      background: #0088cc;
+    }
+
+    .Telegram:hover {
+      background: #0072a1;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      #clock {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+      }
+
+      .links a {
+        width: 100%;
+        text-align: center;
+      }
+    }
